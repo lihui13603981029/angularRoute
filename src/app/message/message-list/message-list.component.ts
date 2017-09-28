@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
-    templateUrl:''
+    template:`message-list`
 })
 
 export class MessageListComponent {

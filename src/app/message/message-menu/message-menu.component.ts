@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 
 @Component({
-    templateUrl:''
+    selector:'message-menu',
+    templateUrl:'./message-menu.component.html',
+    styleUrls:['./message-menu.component.css']
 })
 
 export class MessageMenuComponent {

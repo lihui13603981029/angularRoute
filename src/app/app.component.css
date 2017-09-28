@@ -1,0 +1,33 @@
+.app_nav {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    background-color: wheat;
+}
+.app_nav .nav_btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 20px;
+
+
+}
+.app_nav .nav_title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 50px;
+    margin-left:-25px; 
+    text-align: center;
+}
+.app_tabbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    justify-content: space-around;
+    width: 373px;
+    height: 40px;
+    border: 1px solid gray;
+}
