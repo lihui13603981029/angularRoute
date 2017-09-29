@@ -14,7 +14,7 @@ const routes: Routes = [
         component: MessageComponent,
         children:[
             {
-                path:'',
+                path:'messgeMenu',
                 component: MessageMenuComponent,
                 children:[
                     {

@@ -1,20 +1,15 @@
 <nav class="app_nav">
     <span class="nav_btn">返回</span>
     <span class="nav_title">首页</span>
+    <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
  </nav>
 <router-outlet></router-outlet>
+<router-outlet name="popup"></router-outlet>
 <div class="app_tabbar">
     <a routerLink="/home" routerLinkActive="active">
         <span>
             <img src="" alt="">
             <span>首页</span>
-        </span>
-        <p></p>
-    </a>
-    <a routerLink="/message" routerLinkActive="active">
-        <span>
-            <img src="" alt="">
-            <span>消息</span>
         </span>
         <p></p>
     </a>
@@ -25,4 +20,12 @@
         </span>
         <p></p>
     </a>
+    <a routerLink="/message" routerLinkActive="active">
+        <span>
+            <img src="" alt="">
+            <span>消息</span>
+        </span>
+        <p></p>
+    </a>
+ 
 </div>

@@ -10,9 +10,9 @@ trigger('routeAnimation',[
    transition(':enter',[
        style({
          opacity:0,
-         transform:'translateX(-100%)'  
+         transform:'translateY(100%)'  
        }),
-       animate('0.2s ease-in')
+       animate('0.5s ease-in')
    ]),
    transition(':leave',[
        animate('0.5s ease-out',style({
