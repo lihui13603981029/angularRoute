@@ -23,6 +23,8 @@
     text-align: center;
 }
 .app_tabbar {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;

@@ -7,6 +7,8 @@ import { MessageMenuComponent } from './message-menu/message-menu.component';
 import { MessageDetailComponent } from './message-detail/message-detail.component';
 import { MessageListComponent } from './message-list/message-list.component';
 
+import { AuthGuard }  from  './../auth-guard.service';
+import { AuthService }      from './../auth.service';
 
 @NgModule({
     imports:[MessageRoutingModule,FormsModule],
@@ -16,7 +18,7 @@ import { MessageListComponent } from './message-list/message-list.component';
         MessageDetailComponent,
         MessageListComponent
     ],
-    providers:[]
+    providers:[AuthGuard,AuthService]
 })
 
 export class MessageModule {

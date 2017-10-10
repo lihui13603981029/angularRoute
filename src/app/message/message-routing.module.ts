@@ -7,11 +7,15 @@ import { MessageDetailComponent } from './message-detail/message-detail.componen
 import { MessageListComponent } from './message-list/message-list.component';
 
 
+//路由守卫
+import { AuthGuard } from   './../auth-guard.service';
+
 
 const routes: Routes = [
     {
         path:'message',
         component: MessageComponent,
+        canActivate:[AuthGuard],
         children:[
             {
                 path:'messgeMenu',
